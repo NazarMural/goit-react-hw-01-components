@@ -4,9 +4,8 @@ const Table = styled.table`
   width: 300px;
   margin: auto;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-
-  & th {
-  }
+  border-collapse: collapse;
+  background-color: #ffffff;
 `;
 
 const Thead = styled.thead`
@@ -19,16 +18,16 @@ const Tr = styled.tr`
   height: 30px;
   text-align: center;
   &:nth-child(2n) {
-    background-color: #ffffff;
+    background-color: #f2f2f2;
   }
 `;
 
 const Th = styled.th`
-  border: 1px solid #2a2a2a;
+  border: 1px solid black;
 `;
 
 const Td = styled.td`
-  border: 1px solid #2a2a2a;
+  border: 1px solid black;
 `;
 
 export { Table, Tbody, Thead, Td, Tr, Th };
